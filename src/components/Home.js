@@ -6,6 +6,7 @@ function Home() {
     const [error, setError] = useState(false);
     const [weather, setWeather] = useState("");
     const apiBaseUrl = "http://api.weatherstack.com/";
+    const apiKey = process.env.REACT_APP_API_KEY;
 
     const handleChange = (e) => {
         const { value } = e.target;
@@ -16,9 +17,7 @@ function Home() {
         e.preventDefault();
         console.log(city);
         axios
-            .get(
-                `${apiBaseUrl}current?access_key=1b51ff321383308bb7b3e685641fe486&query=${city}`
-            )
+            .get(`${apiBaseUrl}current?access_key=${apiKey}&query=${city}`)
             .then((res) => {
                 if (res.data.error) {
                     setError(true);
