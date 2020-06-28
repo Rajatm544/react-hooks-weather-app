@@ -17,7 +17,7 @@ function Home() {
         console.log(city);
         axios
             .get(
-                `${apiBaseUrl}current?access_key=${process.env.REACT_APP_API_KEY}&query=${city}`
+                `${apiBaseUrl}current?access_key=1b51ff321383308bb7b3e685641fe486&query=${city}`
             )
             .then((res) => {
                 if (res.data.error) {
