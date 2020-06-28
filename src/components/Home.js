@@ -31,9 +31,9 @@ function Home() {
 
     return (
         <div className="ui center aligned container">
-            <h2 class="ui header">
-                <i aria-hidden="true" class="sun icon"></i>
-                <div class="content">Weather Of</div>
+            <h2 className="ui header">
+                <i aria-hidden="true" className="sun icon"></i>
+                <div className="content">Weather Of</div>
             </h2>
             <form onSubmit={handleSubmit}>
                 <div className="ui huge fluid icon input">
