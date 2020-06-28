@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+body {
+    margin-top: 20px;
+    height: 100%;
+    background: hsl(197, 85%, 60%);
+    /* Hide scrollbars */
+    overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2.ui.header {
+    color: rgb(255, 238, 0);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.compact.segment {
+    margin: 20px auto;
+    color: #0b88b9;
+    border: 2px solid #0b88b9;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input.icon.input {
+    color: #0b88b9;
+    border: 2px solid #0b88b9;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+    text-decoration: none;
+    color: rgb(255, 238, 0);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:hover {
+    color: rgb(255, 238, 0);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 5px;
+    height: 30px;
+    color: rgb(255, 238, 0);
+    font-size: larger;
+    text-shadow: -0.5px 0 rgb(255, 238, 0), 0 0.5px rgb(255, 238, 0),
+        0.5px 0 rgb(255, 238, 0), 0 -0.5px rgb(255, 238, 0);
+    /* Firefox 3.5+, Opera 9+, Safari 1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Glow(Color=rgb(255, 238, 0), Strength=1);
 }
