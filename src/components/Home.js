@@ -30,9 +30,11 @@ function Home() {
 
     return (
         <div className="ui center aligned container">
-            <h2 className="ui header">
-                <i aria-hidden="true" className="sun icon"></i>
-                <div className="content">Weather Of</div>
+            <h2 className="ui header" onClick={() => window.location.reload()}>
+                <div className="content">
+                    <i aria-hidden="true" className="sun icon"></i>
+                    Weather Of
+                </div>
             </h2>
             <form onSubmit={handleSubmit}>
                 <div className="ui huge fluid icon input">
@@ -75,9 +77,9 @@ function Home() {
                     <p>Please try a different location.</p>
                 </div>
             ) : (
-                <div className="ui info big message">
+                <div className="ui blue big message">
                     <div className="content">
-                        <div className="header">{`Search your location to find out the weather.`}</div>
+                        <div className="header">{`Check the weather at your location.`}</div>
                         <p>{`Try typing in your city in the searchbox above!`}</p>
                     </div>
                 </div>
